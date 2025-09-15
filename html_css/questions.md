@@ -1,0 +1,22 @@
+# HTML & CSS
+- CSS Reference: 
+  - [Ref1](https://cssreference.io/)
+  - [Ref2](https://htmlcheatsheet.com/css/)
+  - [Ref3](https://twitter.com/ravikmmr/status/1501954998405824513?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+  - [Ref4](https://uiverse.io/)
+  - [Ref5](https://9elements.github.io/fancy-border-radius/)
+  - [Ref6](https://keyframes.app/)
+  - [Ref7](https://twitter.com/suprabhasupi/status/1423601251007094787?s=20&t=T0l2fOEHr22cSA5twqk94w)
+- HTML Reference: 
+  - [Ref1](https://htmlcheatsheet.com/)
+  - [Ref2](https://htmlreference.io/)
+- CSS Tricks
+  - [Ref1](https://twitter.com/Steve8708/status/1546657470604382208?s=20&t=p1GKsa7NCbZLmw18jclmZw)
+  - [Ref2](https://twitter.com/RitikaAgrawal08/status/1540995724678090752?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+  - [Ref3](https://twitter.com/builderio/status/1538959141955174400?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+  - [Ref4](https://twitter.com/jh3yy/status/1517629642064150529?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+  - [Ref5](https://twitter.com/_georgemoller/status/1511000165204873226?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+  - [Ref6](https://twitter.com/sebastienlorber/status/1506934317368360965?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+  - [Ref7](https://twitter.com/Prathkum/status/1408317442183634948)
+- [HTML Tricks](https://twitter.com/Insharamin/status/1544931755316154370?s=20&t=1Yz0CYRkwSs2O2JmPVztHA)
+- [CSS practice](https://twitter.com/Insharamin/status/1392714963039383554?s=20&t=wH_aK1JRqu5KtakJjBqSpw)

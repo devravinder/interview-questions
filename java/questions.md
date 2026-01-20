@@ -549,6 +549,39 @@
 
 128. Different Types of [Deisgn Patterns](https://refactoring.guru/design-patterns)?
 
+129. What are major improvements in `Hashmap` after java7
+    - prevously
+      - `linkedlist` used
+      - Worst-case time complexity: O(n) when many keys collide
+    - now
+      - initially `linkedlist` if capacity increased `Red-Black Tree`
+      - Worst-case time complexity: O(log n) when many keys collide
+      - Thresholds introduced
+        - Untreeify threshold:6, Treeify threshold : 8, Min capacity for treeification: 64
+        - Tree conversion (`linkedlist` to `Red-Black Tree`) happens only when:
+            - Bucket size ≥ 8
+            - HashMap capacity ≥ 64
+
+130. major Garbage Collection (GC) improvements after Java 7
+    - After Java 7, Java 8 removed PermGen, introduced Metaspace, stabilized G1 GC
+    - and later versions added ultra-low latency collectors like ZGC and Shenandoah.
+    - In detail
+      - Java 7
+        - PermGen (Fixed size) → OutOfMemoryError
+        - Monolithic heap handling
+      - G1 GC ( java 8)
+        - region based gc (Heap split into regions)
+        - Predictable pause time goals
+        - Low pause times ( Low latency GC )
+        - Automatic heap compaction
+        - Better for large heaps
+    - Metaspace (Native memory) → Grows dynamically
+        - Fewer OOM errors
+        - Better class loading handling
+    - Parallel GC
+        - Better multi-core utilization
+        - Smarter work stealing between GC threads
+
 ## JDBC
 
 1. What is a connection pool? `*`
@@ -850,6 +883,10 @@
         ```
 
 7. What are different types of Micro Service Architecture Design Patterns?
+
+8. Application Performance Monitoring (APM) tool
+   - used to monitor, analyze, and optimize application performance in real time.
+   - `AppDynamics`
 
 ## Other Spring Boot Topics
 

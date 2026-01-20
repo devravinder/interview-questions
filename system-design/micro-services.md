@@ -1,6 +1,7 @@
 # 🧩 Microservices Design Patterns
 
 ## 1. Decomposition Patterns
+
 - **By Business Capability** → Services align with domain areas (e.g., Payments, Orders, Inventory).  
 - **By Subdomain (DDD)** → Use *Domain-Driven Design* to identify bounded contexts.  
 - **Strangler Fig Pattern** → Gradually replace monolith pieces with microservices.  
@@ -8,6 +9,7 @@
 ---
 
 ## 2. Integration Patterns
+
 - **API Gateway** → Single entry point for clients, routes to services.  
 - **Aggregator** → One service calls multiple others and aggregates results.  
 - **Proxy** → Gateway just forwards requests, adds security, throttling.  
@@ -17,6 +19,7 @@
 ---
 
 ## 3. Database Patterns
+
 - **Database per Service** → Each service owns its data (most common).  
 - **Shared Database** → Multiple services share one DB (not recommended, but sometimes practical).  
 - **Saga Pattern** → Distributed transaction management via events/compensating actions.  
@@ -26,6 +29,7 @@
 ---
 
 ## 4. Observability Patterns
+
 - **Log Aggregation** → Centralized logs (ELK, Loki).  
 - **Distributed Tracing** → Trace requests across services (Jaeger, Zipkin, Tempo).  
 - **Health Check API** → Each service exposes `/health` for monitoring.  
@@ -34,6 +38,7 @@
 ---
 
 ## 5. Resiliency Patterns
+
 - **Circuit Breaker** → Stop calls to failing service (e.g., Resilience4j, Hystrix).  
 - **Retry Pattern** → Retry failed calls with backoff.  
 - **Timeout Pattern** → Don’t let one service hang others.  
@@ -44,6 +49,7 @@
 ---
 
 ## 6. Security Patterns
+
 - **Access Token (JWT, OAuth2)** → Secure service-to-service & client calls.  
 - **API Gateway Authentication** → Central place for auth.  
 - **Service Mesh (Istio, Linkerd)** → Handles mTLS, auth, rate limiting at infra level.  
@@ -51,6 +57,7 @@
 ---
 
 ## 7. Deployment Patterns
+
 - **Blue-Green Deployment** → Switch traffic between two environments.  
 - **Canary Release** → Gradually roll out new versions.  
 - **Sidecar Pattern** → Extra container alongside a service (e.g., Envoy proxy).  
@@ -60,22 +67,23 @@
 
 ✅ These patterns are often **combined** in real-world microservices systems depending on business needs, scalability, and reliability.
 
-
 ---
 
-# In Detail
-# ⚓ Bulkhead Pattern (Resiliency)
+## ⚓ Bulkhead Pattern (Resiliency)
 
 ## 📌 What It Is  
+
 The **Bulkhead pattern** is a resiliency design pattern that **isolates failures** in a system so that when one part fails, it doesn’t bring down everything else.  
 
 It’s inspired by ships:  
+
 - A ship has *bulkheads* (partitions) so if one compartment floods, the others stay safe.  
 - Similarly, in microservices, you isolate resources so a failure in one area won’t sink the entire system.  
 
 ---
 
 ## 🛠 How It Works  
+
 - Allocate **separate resources** (threads, DB connections, memory pools) per service or per feature.  
 - If one service gets overloaded, it **only consumes its own quota**, not the entire pool.  
 - Prevents a "noisy neighbor" problem where one service hogs resources and starves others.  
@@ -83,18 +91,22 @@ It’s inspired by ships:
 ---
 
 ## ✅ Example  
+
 Imagine an **e-commerce app** with:
+
 - **Payment Service**
 - **Order Service**
 - **Notification Service**
 
 If the **Payment Service** suddenly gets slow (maybe the bank API is lagging):
+
 - **Without bulkhead** → all system threads are stuck waiting, and Orders + Notifications also fail.  
 - **With bulkhead** → only the Payment Service’s thread pool is affected, Orders + Notifications still work.  
 
 ---
 
 ## 🔧 Implementation Approaches  
+
 - **Thread pool per service** → Each service gets its own threads.  
 - **Connection pool isolation** → Separate DB connections per microservice.  
 - **Rate limiting per service** → Prevent one service from exhausting shared resources.  
@@ -103,6 +115,7 @@ If the **Payment Service** suddenly gets slow (maybe the bank API is lagging):
 ---
 
 ## 📊 Tools & Frameworks  
+
 - **Java / Spring Boot** → Use *Resilience4j* bulkhead module (`BulkheadRegistry`).  
 - **.NET** → *Polly* provides bulkhead policies.  
 - **Service Mesh (Istio/Linkerd)** → Can enforce isolation & limits at infra level.  
@@ -110,4 +123,3 @@ If the **Payment Service** suddenly gets slow (maybe the bank API is lagging):
 ---
 
 👉 **In short:** Bulkhead = *Contain the blast radius of a failure*.
-

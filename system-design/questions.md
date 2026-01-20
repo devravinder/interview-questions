@@ -20,6 +20,18 @@
 - JWT – how does it work? Which encryption algorithm do you use (HS256 / RS256)?
   - [Ref](https://blog.loginradius.com/engineering/jwt-signing-algorithms/)  
   - What are its advantages over others?  
+
+- HS256 / RS256
+
+  - HS256
+    - HMAC using SHA-256
+    - HMAC = Hash-based Message Authentication Code
+    - Uses symmetric key (same secret for sign & verify)
+  - RS256
+    - RSA using SHA-256
+    - RSA = Rivest–Shamir–Adleman
+    - Uses asymmetric keys (private key sign, public key verify)
+
 - What do you use for authentication and authorization? [JWT]  
 - How do you maintain the session on the server side? [Redis Cache or other]  
 - Which type of API Gateway is being used in your project?  

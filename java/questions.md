@@ -265,7 +265,7 @@
     - Type safety + no casting ✔️
 
 65. Garbage collection? Types of Garbage collections? How do they work? `*`
-    - Automatic `memory cleanup`, Removes `unused objects`
+    - [Memory Management](./memory-management)
 
     ### `Types of GC`
 

@@ -280,7 +280,7 @@
     3. `CMS GC`
     → Low pause time
 
-    4. `G1 GC`
+    4. `G1 GC` (Garbage First)
     → Region-based
     → Default (Java 9+)
 

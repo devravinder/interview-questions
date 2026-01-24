@@ -74,6 +74,7 @@
 - Stored Procedure vs Functions
   - [Ref](https://www.dotnettricks.com/learn/sqlserver/difference-between-stored-procedure-and-function-in-sql-server)
 - Views
+- NVL() and NVL2()
 
 ---
 

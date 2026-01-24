@@ -819,6 +819,136 @@
 
 30. DTO `*`
 31. Bean vs Entity vs DTO
+32. How to disable one specific package in spring boot
+
+    1. Exclude package from component scanning
+
+        ```java
+        @SpringBootApplication(
+            scanBasePackages = "com.myapp",
+            excludeFilters = @ComponentScan.Filter(
+                type = FilterType.REGEX,
+                pattern = "com.myapp.unwanted.*"
+            )
+            )
+            public class MyApp { }
+
+        ```
+
+    2. Disable a specific auto-configuration(If the package is coming via auto-config)
+
+       ```java
+         @SpringBootApplication(exclude = {
+            DataSourceAutoConfiguration.class
+            })
+
+       ```
+
+    3. Disable via application.properties (Used when the package is conditionally enabled.)
+
+       ```java
+          spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+       ```
+
+    4. Disable beans using @Profile
+
+       ```java
+          @Profile("!prod")
+            @Component
+            public class TestOnlyBean { }
+
+       ```
+
+33. How to do our own auto configuration
+    1. Step 1: Create configuration class
+
+       ```java
+          @Configuration
+            @ConditionalOnClass(MyService.class)
+            public class MyAutoConfiguration {
+
+            @Bean
+            @ConditionalOnMissingBean
+            public MyService myService() {
+                return new MyService();
+            }
+            }
+
+       ```
+
+    2. Step:2 Register auto-config
+       - create a file (spring 3.+)
+          - `META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports`
+       - add property
+         - `com.myapp.autoconfig.MyAutoConfiguration`
+
+    3. Step 3: (Optional) Enable via properties
+
+       ```java
+         @ConditionalOnProperty(
+            name = "my.feature.enabled",
+            havingValue = "true",
+            matchIfMissing = false
+            )
+
+       ```
+
+    4. one liner:`Auto-configuration uses conditions + classpath scanning + properties to configure beans automatically.`
+
+34. application.properties vs application.yaml
+35. what are named queries?
+    - Named Queries are static, pre-defined JPQL queries defined once and reused.
+      - Advantages
+        - Validated at startup
+        - Reusable
+        - Cleaner code
+    - eg:
+
+      ```java
+         @Entity
+         @NamedQuery(
+            name = "User.findByEmail",
+            query = "SELECT u FROM User u WHERE u.email = :email"
+            )
+        public class User { }
+
+      ```
+
+    - usage
+
+      ```java
+            @Query(name = "User.findByEmail")
+            User findByEmail(@Param("email") String email);
+
+      ```
+
+36. what are native queries?
+    - Native Queries use database-specific SQL, not JPQL.
+      - When to use native queries?
+        - Complex joins
+        - Database-specific features
+        - Performance-critical queries
+        - Stored procedures
+
+    - eg:
+
+      ```java
+       @Query(
+        value = "SELECT * FROM users WHERE status = ?1",
+        nativeQuery = true
+        )
+        List<User> findActiveUsers(String status);
+
+      ```
+
+37. Named vs Native Queries
+
+    | Named Query    | Native Query |
+    | -------------- | ------------ |
+    | Uses JPQL      | Uses SQL     |
+    | DB independent | DB dependent |
+    | Entity based   | Table based  |
 
 ## Spring Security
 

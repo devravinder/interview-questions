@@ -172,6 +172,7 @@ and real-world interview questions in a logical progression.
   - Code splitting
 - Debounce vs Throttling
 - Error Boundaries
+
 - Why clear timers on component unmount?
 
   - Prevent memory leaks

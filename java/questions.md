@@ -582,6 +582,11 @@
         - Better multi-core utilization
         - Smarter work stealing between GC threads
 
+131. Ccan a static block throw exception
+     - yes, only unchecked exceptions ( RuntimeExceptions )
+
+132. LinkedList in java is SingleLinkedList or DoublyLinkedList
+
 ## JDBC
 
 1. What is a connection pool? `*`
@@ -949,6 +954,11 @@
     | Uses JPQL      | Uses SQL     |
     | DB independent | DB dependent |
     | Entity based   | Table based  |
+
+38. in Saga design pattern....one service executed 5 steps out of 7 & failed. How to handle this
+39. How to pass dynamic values to CI pipelines
+    - secrets & config
+    - atrifact information
 
 ## Spring Security
 

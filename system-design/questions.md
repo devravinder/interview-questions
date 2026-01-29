@@ -71,6 +71,10 @@
 - How do you use CI/CD?  
 - What do you look for in code reviews?
   - Best Practices
+- in Saga design pattern....one service executed 5 steps out of 7 & failed. How to handle this
+- How to pass dynamic values to CI pipelines
+  - secrets & config
+  - atrifact information
 
 ---
 

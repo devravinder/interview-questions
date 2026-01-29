@@ -75,6 +75,9 @@
   - [Ref](https://www.dotnettricks.com/learn/sqlserver/difference-between-stored-procedure-and-function-in-sql-server)
 - Views
 - NVL() and NVL2()
+- Sharding vs Partitioning
+  - Sharding: Splitting data across MULTIPLE databases/servers
+  - Partitioning: Splitting a large table into smaller pieces inside the SAME database/server
 
 ---
 

@@ -130,6 +130,7 @@
 ## Links
 
 - [ByteByteGo](https://bytebytego.com/courses/system-design-interview/scale-from-zero-to-millions-of-users)  
+  - [Free PDF](https://blog.bytebytego.com/p/free-system-design-pdf-158-pages)
 - [Tianpan.co](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview)  
 - Solutions Architect
   - [Ref](https://towardsdev.com/solution-architecture-101-are-you-ready-for-the-solution-architect-path-5a2d01aebbb)  

@@ -266,9 +266,7 @@
 
 65. Garbage collection? Types of Garbage collections? How do they work? `*`
     - [Memory Management](./memory-management)
-
-    ### `Types of GC`
-
+    - types
     1. `Serial GC`
     → Single thread
     → Small apps
@@ -434,7 +432,8 @@
 95. Why should we prefer implementing Runnable over the Extending Thread?
 96. Callable vs Runnable? `***`
 97. What is a Future Object? `***`
-98. What is ExecutorService? `***`
+98. What is ExecutorServic    ### `Types of GC`
+e? `***`
 99. What is ThreadPool?
 100. What is BlockingQueue?   `***`
 101. Did you use the reentrantlock? What is the use of it?
@@ -586,6 +585,13 @@
      - yes, only unchecked exceptions ( RuntimeExceptions )
 
 132. LinkedList in java is SingleLinkedList or DoublyLinkedList
+133. Virtual Threads?
+    - how they work?
+    - Virtual Threads vs Platform threads?
+
+134. If I create Strings using StringBuilder for the first time:
+    - How many objects get created?
+    - Does it create anything in the String Pool?
 
 ## JDBC
 

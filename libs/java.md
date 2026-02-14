@@ -1,7 +1,3 @@
-Here’s a **handy catalog of useful Java Spring Boot libraries** that most developers use in real-world projects 🚀
-
----
-
 # 📦 Useful Java Spring Boot Libraries
 
 ## 🔹 Core & Common Utilities
@@ -73,10 +69,13 @@ Here’s a **handy catalog of useful Java Spring Boot libraries** that most deve
 * **Docker Maven/Gradle Plugin** → Containerize apps easily.
 
 --
+
 ## 🔹 Other Utility
+
 * **Quartz Scheduler** - Jobs schedulers
 * **ShedLock** - distributed schedulers
-  - Ensures scheduled tasks run only once in a cluster (when multiple instances of your app are running)          
+  * Ensures scheduled tasks run only once in a cluster (when multiple instances of your app are running)
+
 ---
 
 ⚡ **Quick Rule of Thumb**

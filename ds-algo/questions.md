@@ -1,4 +1,6 @@
-# Basic
+# Ds-Algo
+
+## Basic
 
 - Find the sum of all the digits of a given number.
 - The logic for prime number?
@@ -16,7 +18,7 @@
 
 ---
 
-# Medium
+## Medium
 
 - Find the pair of numbers whose sum is equal to the given from a given array.  
   **Eg:** `8, [1,2,8,3,4,5,6,7] → 1,7 : 2,6 : 3,5`  
@@ -61,7 +63,7 @@ Output: `false`
 
 ---
 
-# Hard
+## Hard
 
 - Find the least no of coins required to form a given number.  
   Coins = `{1,4,5}`  
@@ -77,12 +79,14 @@ Output: `false`
 
 ---
 
-# DS & Algo
+## DS & Algo
 
-## Search
+### Search
+
 - Binary Search [ref](https://www.youtube.com/watch?v=P3YID7liBug&ab_channel=HackerRank)
 
-## Sorting
+### Sorting
+
 - Bubble  
 - Selection  
 - Insertion  
@@ -95,12 +99,13 @@ Output: `false`
 - Bucket Sort  
 - Shell Sort  
 
-## Algorithms
+### Algorithms
+
 - Linked List  
 - Stack  
 - Queue  
 - Binary Trees  
-  - Traversals: Pre-order, Post-order, In-order [ref](https://www.youtube.com/watch?v=BHB0B1jFKQc&ab_channel=BackToBackSWE) 
+  - Traversals: Pre-order, Post-order, In-order [ref](https://www.youtube.com/watch?v=BHB0B1jFKQc&ab_channel=BackToBackSWE)
 - Breadth-first search & Depth-first search [ref](https://www.youtube.com/watch?v=zaBhtODEL0w&ab_channel=HackerRank)
 - Implementing Queue with Stack  
 - Finding the middle element in the linked list of unknown length  
@@ -108,19 +113,21 @@ Output: `false`
 - How to check if a cycle exists in the linked list  
 - How to check if a given Tree is a Binary Search Tree in Java? [ref](https://javarevisited.blogspot.com/2021/12/how-to-check-if-tree-is-binary-search.html#ixzz7eZnrYt1N)
 
-## Dynamic Programming
+### Dynamic Programming
+
 - Find the minimum number of coins required to make the given number.  
   **Eg:** coins = `{1,2,5}`, target=52 → `5*10 + 2*1`
 
 ---
 
-# Links
+## Links
 
 - Problem Solving Approach: [ref](https://medium.com/enjoy-algorithm/popular-problem-solving-approaches-in-data-structures-and-algorithms-6b4d30a0823d)  
 - Interview Qs: [ref1](https://medium.com/javarevisited/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0), [ref2](https://github.com/jwasham/coding-interview-university)
 - JS Algorithms: [ref1](https://github.com/trekhleb/javascript-algorithms), [ref2](https://github.com/TheAlgorithms/Javascript)  
 
 ### Categories
+
 1. [Array](https://bit.ly/3vM1JP5)  
 2. [String](https://bit.ly/3SMkjkb)  
 3. [Binary Tree](https://bit.ly/3JIsn1i)  
@@ -128,5 +135,5 @@ Output: `false`
 5. [Linked List](https://bit.ly/3zFatrn)  
 6. [DP](https://bit.ly/3vLwjs5)  
 
-- Top 20 Recursion Practice Problems: [ref](https://dev.to/javinpaul/top-20-recursion-practice-problems-and-exercises-for-programming-interviews-3lne) 
+- Top 20 Recursion Practice Problems: [ref](https://dev.to/javinpaul/top-20-recursion-practice-problems-and-exercises-for-programming-interviews-3lne)
 - Interview Preparation: [ref](https://github.com/yangshun/tech-interview-handbook)

@@ -1,8 +1,9 @@
-# Basic
+# Logical Questions
 
 ## Thinking Out of the Box
 
 ### 1. Water Jug Problem
+
 You are next to a river, and you are given a very big jar, and **4L & 3L jugs**.  
 You need to fill **5 liters** of water in the large jar.  
 
@@ -10,12 +11,14 @@ You need to fill **5 liters** of water in the large jar.
 - Find more than one way?  
 
 Examples:  
+
 - `5 = 4 + (4 - 3)`  
 - `5 = 4 + 4 → total 8 in big jar → 8 - 3 = 5`  
 
 ---
 
 ### 2. Cake Cutting Problem
+
 How to cut a cake into **8 pieces with 3 cuts**, without moving the pieces?  
 
 - The cake is **cubic in shape**.  
@@ -26,6 +29,7 @@ How to cut a cake into **8 pieces with 3 cuts**, without moving the pieces?
 ---
 
 ### 3. Water Tank Problem
+
 There is a water tank where every second its water level **doubles**.  
 It takes **30 seconds** to reach **full level (100%)**.  
 

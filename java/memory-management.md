@@ -1,4 +1,4 @@
-# Java & Spring Boot Memory Management
+# Java - Spring Boot Memory Management
 
 ## Java Memory Management – Overview
 

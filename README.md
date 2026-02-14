@@ -18,4 +18,4 @@ This repository contains my curated interview preparation notes and questions.
 ## ⭐ Contributions
 
 This is a personal learning repository.  
-Suggestions and improvements are welcome — feel free to open a pull request.
+Suggestions and improvements are welcome — feel free to open a pull request in the [interview-questions](https://github.com/devravinder/interview-questions) repository.

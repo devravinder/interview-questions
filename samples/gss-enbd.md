@@ -1,6 +1,7 @@
-# Software Skills – Tools & Technologies
+# GSS Mock Interview
 
 ## Java & Programming
+
 - Core Java  
 - OOPS Concepts  
 - Collections  
@@ -11,21 +12,25 @@
 - Design Patterns (Creational, Structural, Behavioral)  
 
 ## Microservices & Architecture
+
 - 12-Factor App  
 - Microservices Design Patterns (CQRS, SAGA, Circuit Breaker, API Gateway, Service Discovery, etc.)  
 - Eventual Consistency  
 - Event-Driven Architecture  
 
 ## Messaging & Streaming
+
 - Kafka  
 - Message Queues  
 
 ## Logging & Monitoring
+
 - Logging  
 - Tracing  
 - AWS CloudWatch  
 
 ## Spring Boot
+
 - Filters & Interceptors  
 - Annotations  
 - REST Template  
@@ -35,10 +40,12 @@
 - Controller Advices  
 
 ## Cloud, Containers & Orchestration
+
 - Docker  
 - Kubernetes (K8s) & Probes  
 - OpenShift  
 
 ## Other
+
 - Node.js  
 - React  

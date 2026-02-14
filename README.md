@@ -14,3 +14,8 @@ This repository contains my curated interview preparation notes and questions.
 - DevOps Basics
 - Security (CORS, CSRF, XSS)
 - Docker & Kubernetes
+
+## ⭐ Contributions
+
+This is a personal learning repository.  
+Suggestions and improvements are welcome — feel free to open a pull request.

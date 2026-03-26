@@ -34,3 +34,4 @@
 - Given a dataset of 100 employee records, how would you retrieve the 1 employee with the lowest salaries and display them in ascending order of salary based on the department? Write a program using Java 8 methods.
 - Given the list List<Integer> intList = [1, 1, 5, 7, 1, 2, 8, 4, 9, 3], write a program to remove duplicates and print the numbers in a proper order.
 - How do you handle duplicate messages or duplicate request processing in Apache Kafka?
+

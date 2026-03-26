@@ -1,0 +1,36 @@
+# Mock Interview - Sr Java Develloper
+
+- Can you walk me through your most recent project, including your role, responsibilities, and key challenges?
+- What are the new features added in Java 8, which of them are implemented in your recent application, explain?
+- String vs StringBuilder vs StringBuffer — when to use what?
+- Explain Java Memory Model basics (Heap vs Stack, Metaspace)
+- How does HashMap work internally? What changed after Java 8?
+- what is Comparable vs Comparator
+- How do you manage authentication and authorization in your current project
+- Can you please explain about your recent project architecture
+- Why did you choose Spring Boot for your application? What advantages does it offer?
+- What are microservices, and why would you prefer a microservices architecture over a monolithic one?
+- What are the design patterns do you know, can you please explain what are the design patterns you followed in the recent project and why did you choose that?
+- Difference between synchronized vs Lock (ReentrantLock)
+- When would you use CompletableFuture?
+- what is the difference between memory leak and memory out of range, how do you identify?
+- How do you debug what auto-configurations were applied?
+- What is the N+1 problem and how do you fix it?
+- How would you design a microservice with resilience in Spring?
+- Your API is slow in production—how do you debug?
+- How do you handle global exception management in a Spring Boot application?
+- What is a LinkedHashMap, and how does it differ from HashMap and TreeMap? When would you prefer LinkedHashMap?
+- If you need to build an in-memory cache, which Java data structure/collection would you choose and why?
+- What are the typical steps involved in deploying an application from development to production?
+- Consider a scenario where Microservice A is calling Microservice B, but Microservice B is not responding. How would you - diagnose and handle this situation?
+- What techniques or best practices do you follow to improve the performance of an application?
+- What are the key differences between JPA and Hibernate?
+- What is Spring Data JPA, and how does it simplify JPA-based data access?
+- How do you implement a one-to-many relationship in JPA/Hibernate? What are the common challenges?
+- What is the purpose of the clear() and flush() methods in Hibernate, and when would you use them?
+- How do you manage and centralize logging in a microservices architecture?
+- Write a program to list non-repetitive characters in a String "WelcomeKafka"
+- In a system where users perform multiple API transactions concurrently, how do you handle resource locking and synchronization to avoid race conditions and deadlocks?
+- Given a dataset of 100 employee records, how would you retrieve the 1 employee with the lowest salaries and display them in ascending order of salary based on the department? Write a program using Java 8 methods.
+- Given the list List<Integer> intList = [1, 1, 5, 7, 1, 2, 8, 4, 9, 3], write a program to remove duplicates and print the numbers in a proper order.
+- How do you handle duplicate messages or duplicate request processing in Apache Kafka?

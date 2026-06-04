@@ -79,6 +79,9 @@
   - Sharding: Splitting data across MULTIPLE databases/servers
   - Partitioning: Splitting a large table into smaller pieces inside the SAME database/server
 
+- Rank vs Dense rank ?  Use cases?
+- find the users who logged into app on two consecutive days?
+
 ---
 
 ## NoSQL (Document Databases)

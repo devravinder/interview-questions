@@ -966,6 +966,9 @@ e? `***`
     - secrets & config
     - atrifact information
 
+40. How to create Custom Actuator
+    - how to create a custom actuator metric
+
 ## Spring Security
 
 1. method-level security ( `@PreAuthorize` , `@PostAuthorize`, `@Secured` ) `*`

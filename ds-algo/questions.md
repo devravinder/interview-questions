@@ -40,6 +40,8 @@
   - `35, [4,3,8] → true → 4*5 + 3*5 (or (4+3)*5)`
 - Flatten array → `[1,2,3[4,5,[6,7]]] → [1,2,3,4,5,6,7]`  
 - Deep Copy → `{a:"a", b:{c:"c"}, d:{e:{f:"f"}}}`
+- Find Triplets with Given Sum
+- Find Missing and Duplicate Number - An array contains numbers from 1 to n. - One number is missing and one number appears twice.
 
 ---
 
